@@ -1,0 +1,15 @@
+gitlabUrl: https://gitlab."YOUR DOMAIN"/
+runnerRegistrationToken: "Your token"
+rbac:
+  create: true
+runners:
+  config: |
+    [[runners]]
+      executor = "docker"
+      privileged = true
+      environment = ["DOCKER_TLS_CERTDIR="]
+      [runners.docker]
+        tls_verify = false
+        privileged = true
+      [runners.kubernetes]
+        privileged = true
