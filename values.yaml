@@ -1,5 +1,6 @@
-gitlabUrl: https://gitlab."YOUR DOMAIN"/
-runnerRegistrationToken: "Your token"
+gitlabUrl: 
+runnerRegistrationToken:
+imagePullPolicy: IfNotPresent 
 rbac:
   create: true
 runners:
